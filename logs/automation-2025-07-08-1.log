@@ -1,0 +1,451 @@
+14:31:17.386 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3a022576: 0 ms
+17:36:22.372 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+17:36:22.916 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+17:36:39.745 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+17:36:40.123 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+17:36:40.909 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+17:36:40.915 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+17:36:43.751 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+17:36:43.909 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+17:40:41.075 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\crossbrowser.xml"
+17:40:41.601 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\crossbrowser.xml
+
+17:40:54.545 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+17:40:54.819 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+17:40:55.568 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+17:40:55.577 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+17:40:58.696 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+17:40:58.799 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+17:41:11.005 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+17:41:11.959 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+17:41:12.909 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+17:41:12.910 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+17:41:15.730 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+17:41:15.833 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+17:53:01.283 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\AppData\Local\Temp\testng-eclipse--135782322\testng-customsuite.xml"
+17:53:01.476 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.478 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+17:53:01.482 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.483 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.483 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.483 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.483 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.483 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.489 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+17:53:01.496 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
+17:53:01.498 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.498 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.498 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.498 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.499 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.499 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.503 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.503 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.503 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.503 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.504 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.504 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.506 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.506 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.506 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:53:01.506 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:53:01.512 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\AppData\Local\Temp\testng-eclipse--135782322\testng-customsuite.xml
+
+17:53:01.527 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+17:53:01.733 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@4e70a728: 101 ms
+17:53:01.752 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@5c18016b: 18 ms
+17:53:01.767 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@bff34c6: 15 ms
+17:53:01.781 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@31aa3ca5: 14 ms
+17:53:01.792 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3543df7d: 11 ms
+17:53:01.793 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7c541c15: 0 ms
+17:53:28.254 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+17:53:28.485 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+17:53:35.964 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+17:53:36.220 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+17:53:36.687 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+17:53:36.690 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+17:53:38.149 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+17:53:38.191 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+16:35:19.648 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+16:36:26.363 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+16:36:26.588 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+16:36:35.847 [main] INFO  testCases.Tc002_LoginTest - *******Starting Tc002_LoginTest *******
+16:36:37.632 [main] INFO  testCases.Tc002_LoginTest - *******Finished Tc002_LoginTest *******
+13:18:09.471 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:18:51.846 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:18:52.065 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+13:19:46.064 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:19:46.289 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+13:21:21.486 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:21:21.692 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+13:25:18.053 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:25:18.267 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+13:25:23.877 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:23.880 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.251 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.252 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.270 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.271 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.294 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.295 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.327 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.328 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.349 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.350 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.365 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.366 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.380 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.380 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.395 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.397 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.412 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.413 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.427 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.428 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.444 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.445 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.463 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.464 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.478 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.479 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.494 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.494 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.508 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:25:24.509 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:25:24.528 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:25:45.414 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:25:47.959 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:25:49.976 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:26:00.641 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:26:02.533 [main] INFO  testCases.TC003_LoginDDT - ****** Ending Execution of TC_003_LoginDDT *********
+13:30:54.149 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+13:30:54.359 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+13:31:01.212 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:01.218 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.044 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.091 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.093 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.138 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.140 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.176 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.177 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.205 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.207 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.245 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.246 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.273 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.274 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.302 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.304 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.343 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.344 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.376 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.377 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.410 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.412 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.445 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.446 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.478 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.479 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.506 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.507 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.550 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.555 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.606 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:31:02.608 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:31:02.657 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:31:24.359 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:31:26.917 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:31:29.315 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:31:40.252 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+13:31:42.413 [main] INFO  testCases.TC003_LoginDDT - ****** Ending Execution of TC_003_LoginDDT *********
+10:37:19.934 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+10:37:20.208 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+10:38:50.083 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+10:38:50.444 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+10:39:02.164 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+10:39:02.730 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+10:39:03.331 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+10:39:03.335 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+10:39:05.265 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+10:39:05.335 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+10:39:12.886 [main] INFO  testCases.Tc002_LoginTest - *******Starting Tc002_LoginTest *******
+10:39:14.807 [main] INFO  testCases.Tc002_LoginTest - *******Finished Tc002_LoginTest *******
+10:41:16.401 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+10:41:16.651 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+10:41:22.880 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+10:41:23.189 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+10:41:23.644 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+10:41:23.647 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+10:41:24.291 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+10:41:25.046 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+10:41:30.734 [main] INFO  testCases.Tc002_LoginTest - *******Starting Tc002_LoginTest *******
+10:41:32.678 [main] INFO  testCases.Tc002_LoginTest - *******Finished Tc002_LoginTest *******
+10:41:44.457 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+10:41:44.744 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+10:42:44.503 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+10:42:45.058 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+10:42:57.817 [main] INFO  testCases.Tc002_LoginTest - *******Starting Tc002_LoginTest *******
+10:43:01.466 [main] INFO  testCases.Tc002_LoginTest - *******Finished Tc002_LoginTest *******
+16:12:08.341 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml"
+16:12:08.585 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\grouping.xml
+
+16:12:18.056 [main] INFO  testCases.Tc001_AccountRegistrationTest - ******** Starting Tc001_AccountRegistrationTest *****
+16:12:18.386 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on My Account Link...
+16:12:18.853 [main] INFO  testCases.Tc001_AccountRegistrationTest - Clicked on Register Link...
+16:12:18.856 [main] INFO  testCases.Tc001_AccountRegistrationTest - Providing customer details...
+16:12:20.215 [main] INFO  testCases.Tc001_AccountRegistrationTest - Validating Expected Message...
+16:12:20.259 [main] INFO  testCases.Tc001_AccountRegistrationTest - ****** Finished Tc001_AccountRegistrationTest **********
+16:12:25.852 [main] INFO  testCases.Tc002_LoginTest - *******Starting Tc002_LoginTest *******
+16:12:27.463 [main] INFO  testCases.Tc002_LoginTest - *******Finished Tc002_LoginTest *******
+21:50:06.502 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\AppData\Local\Temp\testng-eclipse--1343404586\testng-customsuite.xml"
+21:50:06.681 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+21:50:06.684 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+21:50:06.685 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.685 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.686 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.686 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.687 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.687 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.693 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+21:50:06.702 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+21:50:06.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.707 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.707 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.707 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.707 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.709 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.710 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.710 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.710 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.711 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.711 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.713 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.713 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.713 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+21:50:06.713 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+21:50:06.720 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\AppData\Local\Temp\testng-eclipse--1343404586\testng-customsuite.xml
+
+21:50:06.735 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 2 ms.
+21:50:06.904 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:06.906 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.242 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.243 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.267 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.268 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.295 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.296 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.313 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.314 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.332 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.333 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.352 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.353 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.369 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.370 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.386 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.386 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.402 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.403 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.418 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.419 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.436 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.437 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.451 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.452 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.463 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.464 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.478 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.479 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.491 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.492 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.504 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:50:07.504 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:50:07.688 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@5560bcdf: 85 ms
+21:50:07.706 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@7578e06a: 18 ms
+21:50:07.727 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@3af356f: 21 ms
+21:50:07.741 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4078695f: 12 ms
+21:50:07.752 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@198ef2ce: 11 ms
+21:50:07.753 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4cbd03e7: 0 ms
+21:51:01.359 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml"
+21:51:01.584 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ebhomuk\Downloads\JavaPractice\opencart121\master.xml
+
+21:51:09.154 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.158 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.553 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.554 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.578 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.580 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.606 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.607 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.625 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.627 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.645 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.645 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.663 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.664 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.680 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.681 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.696 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.697 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.727 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.730 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.749 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.750 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.770 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.771 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.787 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.787 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.803 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.804 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.817 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.817 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.829 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.830 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.843 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:51:09.844 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:51:09.865 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+21:51:30.626 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+21:51:32.215 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+21:51:33.833 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+21:51:44.437 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+21:51:46.206 [main] INFO  testCases.TC003_LoginDDT - ****** Ending Execution of TC_003_LoginDDT *********
+00:43:47.322 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mukes\AppData\Local\Temp\testng-eclipse-1052730720\testng-customsuite.xml"
+00:43:47.635 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+00:43:47.640 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+00:43:47.642 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.642 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.644 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.644 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.645 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.645 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.652 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+00:43:47.661 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
+00:43:47.664 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.665 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+00:43:47.666 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.666 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.666 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.666 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.669 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.669 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.669 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.670 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.673 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.673 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.674 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.674 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.675 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.675 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.677 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.677 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.677 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:43:47.677 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:43:47.685 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mukes\AppData\Local\Temp\testng-eclipse-1052730720\testng-customsuite.xml
+
+00:43:47.706 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+00:43:48.053 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2eced48b: 157 ms
+00:43:48.079 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@2a7686a7: 26 ms
+00:43:48.103 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@2a2c13a8: 24 ms
+00:43:48.126 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@17a87e37: 23 ms
+00:43:48.139 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@75b25825: 13 ms
+00:43:48.139 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@18025ced: 0 ms
+00:45:15.448 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mukes\Downloads\JavaPractice\opencart121\master.xml"
+00:45:15.787 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mukes\Downloads\JavaPractice\opencart121\master.xml
+
+00:45:30.282 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:30.286 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:30.962 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:30.964 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.010 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.012 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.071 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.072 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.129 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.131 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.168 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.170 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.197 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.198 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.218 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.219 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.239 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.240 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.266 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.267 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.287 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.288 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.308 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.309 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.330 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.331 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.351 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.351 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.365 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.365 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.379 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.379 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.393 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:45:31.394 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:45:31.431 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+00:45:52.550 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+00:45:55.128 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+00:45:57.944 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+00:46:09.569 [main] INFO  testCases.TC003_LoginDDT - ****** Starting Execution of TC_003_LoginDDT *********
+00:46:12.371 [main] INFO  testCases.TC003_LoginDDT - ****** Ending Execution of TC_003_LoginDDT *********
+23:19:33.680 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mukes\Downloads\JavaPractice\opencart121\master.xml"
+23:19:34.021 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mukes\Downloads\JavaPractice\opencart121\master.xml
+
+23:19:41.747 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+23:19:41.756 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+23:19:42.853 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+23:19:42.855 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+23:19:42.919 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+23:19:42.924 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+23:19:43.015 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels

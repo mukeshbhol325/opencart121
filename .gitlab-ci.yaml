@@ -1,0 +1,51 @@
+stages:
+  - build
+  - test
+  - report
+
+variables:
+  MAVEN_CLI_OPTS: "-B -DskipTests=false"
+  REPORT_DIR: "target/surefire-reports"
+  DISPLAY: ":99"    # Required for Selenium headless
+
+# -------- Build Stage --------
+build:
+  stage: build
+  image: maven:3.9.2-eclipse-temurin-17
+  script:
+    - echo "Building project..."
+    - mvn clean compile
+  artifacts:
+    paths:
+      - target/
+    expire_in: 1 week
+
+# -------- Test Stage --------
+test:
+  stage: test
+  image: maven:3.9.2-eclipse-temurin-17
+  services:
+    - name: selenium/standalone-chrome:115.0
+      alias: selenium
+  variables:
+    SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+  script:
+    - echo "Running tests on Selenium Chrome..."
+    - mvn test
+  artifacts:
+    when: always
+    paths:
+      - target/surefire-reports/
+      - target/failsafe-reports/
+    expire_in: 1 week
+
+# -------- Report Stage --------
+report:
+  stage: report
+  image: maven:3.9.2-eclipse-temurin-17
+  script:
+    - echo "Pipeline finished. Test reports are in $REPORT_DIR"
+  artifacts:
+    paths:
+      - target/surefire-reports/
+    expire_in: 1 week

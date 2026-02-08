@@ -1,30 +1,47 @@
-image: maven:3.9.9-eclipse-temurin-17
+image: maven:3.9.6-eclipse-temurin-17
 
 stages:
   - test
 
 variables:
-  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
-  JAVA_TOOL_OPTIONS: "-Djava.awt.headless=true"
+  MAVEN_OPTS: "-Djava.awt.headless=true"
+  _JAVA_OPTIONS: "-Djava.awt.headless=true"
 
-cache:
-  paths:
-    - .m2/repository
+services:
+  - name: selenium/hub:4.19.1
+    alias: selenium-hub
+
+  - name: selenium/node-chrome:4.19.1
+    alias: chrome
+    command: ["--host", "selenium-hub"]
 
 test:
   stage: test
-  services:
-    - name: selenium/standalone-chrome:4.31.0
-      alias: selenium
+
   before_script:
-    - apt-get update
-    - apt-get install -y wget curl unzip
+    # Print versions for debug
+    - java -version
+    - mvn -version
+
+    # Create folder for TestNG suite and copy master.xml into project workspace
+    - mkdir -p src/test/resources
+    - cp master.xml src/test/resources/master.xml
+
+    # Wait for Selenium Grid to be ready
+    - |
+      echo "Waiting for Selenium Grid..."
+      for i in {1..30}; do
+        curl -s http://selenium-hub:4444/wd/hub/status | grep -q '"ready":true' && break
+        echo "Selenium not ready yet..."
+        sleep 5
+      done
+
   script:
     - mvn clean test
+
   artifacts:
     when: always
-    reports:
-      junit: target/surefire-reports/*.xml
+    expire_in: 1 week
     paths:
       - target/surefire-reports/
       - target/screenshots/

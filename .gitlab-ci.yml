@@ -8,27 +8,23 @@ variables:
   MAVEN_CLI_OPTS: "-B -DskipTests=false"
   SELENIUM_REMOTE_URL: "http://selenium-hub:4444/wd/hub"
 
-# -------- Build Stage --------
 build:
   stage: build
-  image: maven:3.9.6-eclipse-temurin-17-jammy
+  image: maven:3.9.9-eclipse-temurin-17
   script:
-    - echo "Building project..."
     - mvn -B clean compile
   artifacts:
     paths:
       - target/
     expire_in: 1 week
 
-# -------- Test Stage --------
 test:
   stage: test
-  image: maven:3.9.6-eclipse-temurin-17-jammy
+  image: maven:3.9.9-eclipse-temurin-17
 
   services:
     - name: selenium/hub:4.18.1
       alias: selenium-hub
-
     - name: selenium/node-chrome:4.18.1
       alias: chrome
 
@@ -39,7 +35,8 @@ test:
     SE_NODE_GRID_URL: "http://selenium-hub:4444"
 
   script:
-    - echo "Running TestNG Selenium tests on Grid..."
+    - echo "Waiting for Selenium Grid..."
+    - sleep 10
     - mvn -B test -Dos=linux -Dbrowser=chrome
 
   artifacts:
@@ -50,12 +47,11 @@ test:
       - screenshots/
     expire_in: 1 week
 
-# -------- Report Stage --------
 report:
   stage: report
-  image: maven:3.9.6-eclipse-temurin-17-jammy
+  image: maven:3.9.9-eclipse-temurin-17
   script:
-    - echo "Pipeline completed. Reports available in artifacts."
+    - echo "Pipeline finished. Reports are in artifacts."
   artifacts:
     paths:
       - target/surefire-reports/

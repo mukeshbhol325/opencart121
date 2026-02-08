@@ -1,36 +1,51 @@
 stages:
+  - build
   - test
+  - report
 
 variables:
-  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
   MAVEN_CLI_OPTS: "-B -DskipTests=false"
+  DISPLAY: ":99"
   SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
 
-cache:
-  paths:
-    - .m2/repository
-
-selenium-tests:
-  stage: test
-  image: maven:3.9.9-eclipse-temurin-17
-
-  services:
-    - name: selenium/standalone-chrome:4.19.0
-      alias: selenium
-
-  before_script:
-    - java -version
-    - mvn -version
-
+# -------- Build Stage --------
+build:
+  stage: build
+  image: maven:3.9.2-eclipse-temurin-17
   script:
-    - echo "Running Selenium TestNG tests in headless mode..."
-    - mvn $MAVEN_CLI_OPTS clean test -Dexecution=remote -Dselenium.remote.url=$SELENIUM_REMOTE_URL
+    - mvn -B clean compile
+  artifacts:
+    paths:
+      - target/
+    expire_in: 1 week
 
+# -------- Test Stage --------
+test:
+  stage: test
+  image: maven:3.9.2-eclipse-temurin-17
+  services:
+    - name: selenium/standalone-chrome:latest
+      alias: selenium
+  variables:
+    DISPLAY: ":99"
+  script:
+    - echo "Running tests in CI with Selenium Grid..."
+    - mvn -B test
   artifacts:
     when: always
     paths:
       - target/surefire-reports/
-      - target/screenshots/
-    reports:
-      junit: target/surefire-reports/*.xml
-    expire_in: 7 days
+      - target/failsafe-reports/
+      - screenshots/
+    expire_in: 1 week
+
+# -------- Report Stage --------
+report:
+  stage: report
+  image: maven:3.9.2-eclipse-temurin-17
+  script:
+    - echo "Pipeline finished. Reports generated."
+  artifacts:
+    paths:
+      - target/surefire-reports/
+    expire_in: 1 week

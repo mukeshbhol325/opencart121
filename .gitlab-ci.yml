@@ -13,35 +13,39 @@ variables:
 services:
   - name: selenium/hub:4.19.1
     alias: selenium-hub
-
   - name: selenium/node-chrome:4.19.1
     alias: chrome
 
 test:
   stage: test
-
   before_script:
     - java -version
     - mvn -version
-
-    # Make sure master.xml is present in repo root (same level as pom.xml)
     - ls -l
-
-    # Wait for Selenium Hub to be ready
+    # Improved Selenium Grid health check
     - |
       echo "Waiting for Selenium Grid..."
-      for i in {1..30}; do
-        curl -s http://selenium-hub:4444/status | grep -q '"ready":true' && break
-        echo "Selenium not ready yet..."
-        sleep 5
+      MAX_ATTEMPTS=30
+      ATTEMPT=0
+      until curl -sf http://selenium-hub:4444/status | grep -q '"ready":true'; do
+        ATTEMPT=$((ATTEMPT+1))
+        if [ $ATTEMPT -ge $MAX_ATTEMPTS ]; then
+          echo "ERROR: Selenium Grid failed to start"
+          exit 1
+        fi
+        echo "Attempt $ATTEMPT/$MAX_ATTEMPTS: Waiting..."
+        sleep 2
       done
-
+      echo "✓ Selenium Grid is ready!"
+  
   script:
-    - mvn clean test
-
+    - mvn clean test -Dselenium.hub.url=http://selenium-hub:4444/wd/hub
+  
   artifacts:
     when: always
     expire_in: 1 week
     paths:
       - target/surefire-reports/
       - target/screenshots/
+    reports:
+      junit: target/surefire-reports/TEST-*.xml

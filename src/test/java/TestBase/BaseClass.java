@@ -26,100 +26,130 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-@BeforeClass(groups= {"Sanity","Regression","Master"})
-@Parameters({"os","browser"})
-public void setup(String os,String br) throws IOException {
+public class BaseClass {
 
-    FileReader file = new FileReader("./src//test//resources//config.properties");
-    p = new Properties();
-    p.load(file);
+    public static WebDriver driver;
+    public Logger logger;
+    public Properties p;
 
-    logger = LogManager.getLogger(this.getClass());
+    @BeforeClass(groups = {"Sanity", "Regression", "Master"})
+    @Parameters({"os", "browser"})
+    public void setup(String os, String br) throws IOException {
 
-    if (p.getProperty("execution").equalsIgnoreCase("remote")) {
+        FileReader file = new FileReader("./src/test/resources/config.properties");
+        p = new Properties();
+        p.load(file);
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        logger = LogManager.getLogger(this.getClass());
 
-        // OS optional for CI
-        if (os != null) {
-            if (os.equalsIgnoreCase("windows")) {
-                capabilities.setPlatform(Platform.WIN11);
-            } else if (os.equalsIgnoreCase("mac")) {
-                capabilities.setPlatform(Platform.MAC);
+        if (p.getProperty("execution").equalsIgnoreCase("remote")) {
+
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+
+            // OS optional for CI
+            if (os != null) {
+                if (os.equalsIgnoreCase("windows")) {
+                    capabilities.setPlatform(Platform.WIN11);
+                } else if (os.equalsIgnoreCase("mac")) {
+                    capabilities.setPlatform(Platform.MAC);
+                }
+            }
+
+            if (br.equalsIgnoreCase("chrome")) {
+
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--window-size=1920,1080");
+
+                options.merge(capabilities);
+
+                String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
+                if (hubUrl == null || hubUrl.isEmpty()) {
+                    hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+                }
+
+                driver = new RemoteWebDriver(new URL(hubUrl), options);
+
+            } else if (br.equalsIgnoreCase("edge")) {
+
+                EdgeOptions options = new EdgeOptions();
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--window-size=1920,1080");
+
+                options.merge(capabilities);
+
+                String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
+                if (hubUrl == null || hubUrl.isEmpty()) {
+                    hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+                }
+
+                driver = new RemoteWebDriver(new URL(hubUrl), options);
+
+            } else {
+                throw new RuntimeException("No Matching Browser");
             }
         }
 
-        if (br.equalsIgnoreCase("chrome")) {
+        else if (p.getProperty("execution").equalsIgnoreCase("local")) {
 
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");
-
-            options.merge(capabilities);
-
-            String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
-            if (hubUrl == null || hubUrl.isEmpty()) {
-                hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+            if (br.equalsIgnoreCase("chrome")) {
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--window-size=1920,1080");
+                driver = new ChromeDriver(options);
             }
-
-            driver = new RemoteWebDriver(new URL(hubUrl), options);
-
-        } else if (br.equalsIgnoreCase("edge")) {
-
-            EdgeOptions options = new EdgeOptions();
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");
-
-            options.merge(capabilities);
-
-            String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
-            if (hubUrl == null || hubUrl.isEmpty()) {
-                hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+            else if (br.equalsIgnoreCase("edge")) {
+                EdgeOptions options = new EdgeOptions();
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--window-size=1920,1080");
+                driver = new EdgeDriver(options);
             }
+            else {
+                throw new RuntimeException("Invalid browser");
+            }
+        }
 
-            driver = new RemoteWebDriver(new URL(hubUrl), options);
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
+        driver.get(p.getProperty("appURL1"));
+    }
 
-        } else {
-            throw new RuntimeException("No Matching Browser");
+    @AfterClass(groups = {"Sanity", "Regression", "Master"})
+    public void teardown() {
+        if (driver != null) {
+            driver.quit();
         }
     }
 
-    else if (p.getProperty("execution").equalsIgnoreCase("local")) {
-
-        if (br.equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");
-            driver = new ChromeDriver(options);
-        }
-        else if (br.equalsIgnoreCase("edge")) {
-            EdgeOptions options = new EdgeOptions();
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");
-            driver = new EdgeDriver(options);
-        }
-        else {
-            throw new RuntimeException("Invalid browser");
-        }
+    // Optional helpers
+    public String randomString() {
+        return RandomStringUtils.randomAlphabetic(5);
     }
 
-    driver.manage().deleteAllCookies();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    driver.get(p.getProperty("appURL1"));
-    driver.manage().window().maximize();
-}
-
-@AfterClass(groups= {"Sanity","Regression","Master"})
-public void teardown() {
-    if (driver != null) {
-        driver.quit();
+    public String randomNumber() {
+        return RandomStringUtils.randomNumeric(10);
     }
-}
+
+    public String randomAlphaNumeric() {
+        return RandomStringUtils.randomAlphabetic(3) + "@" + RandomStringUtils.randomNumeric(3);
+    }
+
+    public String captureScreen(String tname) throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File src = ts.getScreenshotAs(OutputType.FILE);
+
+        String targetPath = System.getProperty("user.dir") + "/screenshots/" + tname + "_" + timeStamp + ".png";
+        File target = new File(targetPath);
+        src.renameTo(target);
+
+        return tar

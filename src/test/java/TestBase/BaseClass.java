@@ -54,6 +54,11 @@ public class BaseClass {
                 }
             }
 
+            String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
+            if (hubUrl == null || hubUrl.isEmpty()) {
+                hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+            }
+
             if (br.equalsIgnoreCase("chrome")) {
 
                 ChromeOptions options = new ChromeOptions();
@@ -61,13 +66,7 @@ public class BaseClass {
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--window-size=1920,1080");
-
                 options.merge(capabilities);
-
-                String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
-                if (hubUrl == null || hubUrl.isEmpty()) {
-                    hubUrl = "http://selenium:4444/wd/hub";
-                }
 
                 driver = new RemoteWebDriver(new URL(hubUrl), options);
 
@@ -78,36 +77,34 @@ public class BaseClass {
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--window-size=1920,1080");
-
                 options.merge(capabilities);
-
-                String hubUrl = System.getenv("SELENIUM_REMOTE_URL");
-                if (hubUrl == null || hubUrl.isEmpty()) {
-                    hubUrl = "http://selenium:4444/wd/hub";
-                }
 
                 driver = new RemoteWebDriver(new URL(hubUrl), options);
 
             } else {
-                throw new RuntimeException("No Matching Browser");
+                throw new RuntimeException("Invalid browser");
             }
 
-        } else if (p.getProperty("execution").equalsIgnoreCase("local")) {
+        } else {
 
             if (br.equalsIgnoreCase("chrome")) {
+
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless=new");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--window-size=1920,1080");
+
                 driver = new ChromeDriver(options);
 
             } else if (br.equalsIgnoreCase("edge")) {
+
                 EdgeOptions options = new EdgeOptions();
                 options.addArguments("--headless=new");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--window-size=1920,1080");
+
                 driver = new EdgeDriver(options);
 
             } else {
@@ -128,29 +125,45 @@ public class BaseClass {
         }
     }
 
-    public String randomString() {
+    // ---------------- RANDOM DATA HELPERS ----------------
+
+    // Old method names (DO NOT BREAK TESTS)
+    public String randomeString() {
         return RandomStringUtils.randomAlphabetic(5);
     }
 
-    public String randomNumber() {
+    public String randomeNumber() {
         return RandomStringUtils.randomNumeric(10);
     }
 
-    public String randomAlphaNumeric() {
+    public String randomeAlphaNumeric() {
         return RandomStringUtils.randomAlphabetic(3) + "@" + RandomStringUtils.randomNumeric(3);
     }
+
+    // New correct names (optional future use)
+    public String randomString() {
+        return randomeString();
+    }
+
+    public String randomNumber() {
+        return randomeNumber();
+    }
+
+    public String randomAlphaNumeric() {
+        return randomeAlphaNumeric();
+    }
+
+    // ---------------- SCREENSHOT ----------------
 
     public String captureScreen(String tname) throws IOException {
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
         File src = ts.getScreenshotAs(OutputType.FILE);
 
-        String targetPath = System.getProperty("user.dir") + "/target/screenshots/" + tname + "_" + timeStamp + ".png";
+        String targetPath = System.getProperty("user.dir") + "/screenshots/" + tname + "_" + timeStamp + ".png";
         File target = new File(targetPath);
-        target.getParentFile().mkdirs();
 
         src.renameTo(target);
-
         return targetPath;
     }
 }

@@ -1,51 +1,42 @@
 stages:
-  - build
   - test
-  - report
 
 variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
   MAVEN_CLI_OPTS: "-B -DskipTests=false"
-  REPORT_DIR: "target/surefire-reports"
-  DISPLAY: ":99"    # Required for Selenium headless
+  DISPLAY: ":99"
 
-# -------- Build Stage --------
-build:
-  stage: build
-  image: maven:3.9.2-eclipse-temurin-17
-  script:
-    - echo "Building project..."
-    - mvn clean compile
-  artifacts:
-    paths:
-      - target/
-    expire_in: 1 week
+cache:
+  paths:
+    - .m2/repository
 
-# -------- Test Stage --------
-test:
+selenium-tests:
   stage: test
-  image: maven:3.9.2-eclipse-temurin-17
+  image: maven:3.9.9-eclipse-temurin-17
+
   services:
-    - name: selenium/standalone-chrome:115.0
+    - name: selenium/standalone-chrome:4.19.0
       alias: selenium
-  variables:
-    SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+
+  before_script:
+    # Install GUI / X11 libs required by Java AWT & Selenium
+    - apt-get update
+    - apt-get install -y libxext6 libxrender1 libxtst6 libxi6 libgtk-3-0
+
+    # Make selenium container reachable as localhost
+    - echo "127.0.0.1 selenium" >> /etc/hosts
+
+    - java -version
+    - mvn -version
+
   script:
-    - echo "Running tests on Selenium Chrome..."
-    - mvn test
+    - echo "Running Selenium TestNG tests in GitLab CI..."
+    - mvn clean test
+
   artifacts:
     when: always
     paths:
       - target/surefire-reports/
       - target/failsafe-reports/
-    expire_in: 1 week
-
-# -------- Report Stage --------
-report:
-  stage: report
-  image: maven:3.9.2-eclipse-temurin-17
-  script:
-    - echo "Pipeline finished. Test reports are in $REPORT_DIR"
-  artifacts:
-    paths:
-      - target/surefire-reports/
-    expire_in: 1 week
+      - target/screenshots/
+    expire_in: 7 days

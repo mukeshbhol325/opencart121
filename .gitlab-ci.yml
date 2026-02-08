@@ -4,7 +4,7 @@ stages:
 variables:
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
   MAVEN_CLI_OPTS: "-B -DskipTests=false"
-  DISPLAY: ":99"
+  SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
 
 cache:
   paths:
@@ -19,24 +19,18 @@ selenium-tests:
       alias: selenium
 
   before_script:
-    # Install GUI / X11 libs required by Java AWT & Selenium
-    - apt-get update
-    - apt-get install -y libxext6 libxrender1 libxtst6 libxi6 libgtk-3-0
-
-    # Make selenium container reachable as localhost
-    - echo "127.0.0.1 selenium" >> /etc/hosts
-
     - java -version
     - mvn -version
 
   script:
-    - echo "Running Selenium TestNG tests in GitLab CI..."
-    - mvn clean test
+    - echo "Running Selenium TestNG tests in headless mode..."
+    - mvn $MAVEN_CLI_OPTS clean test -Dexecution=remote -Dselenium.remote.url=$SELENIUM_REMOTE_URL
 
   artifacts:
     when: always
     paths:
       - target/surefire-reports/
-      - target/failsafe-reports/
       - target/screenshots/
+    reports:
+      junit: target/surefire-reports/*.xml
     expire_in: 7 days

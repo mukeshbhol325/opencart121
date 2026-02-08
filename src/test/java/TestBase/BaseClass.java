@@ -17,7 +17,9 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -41,28 +43,60 @@ public class BaseClass {
 		logger=LogManager.getLogger(this.getClass());
 		
 		if(p.getProperty("execution").equalsIgnoreCase("remote")) {
-			DesiredCapabilities capabilities=new DesiredCapabilities();
-			
-			//OS
-			if(os.equalsIgnoreCase("windows")) {
-				capabilities.setPlatform(Platform.WIN11);
-			}
-			else if(os.equalsIgnoreCase("mac")) {
-				capabilities.setPlatform(Platform.MAC);
-			}
-			else {
-				System.out.println("No Matching os");
-				return;
-			}
-			//browser
-			switch(br.toLowerCase()) {
-			case "chrome":capabilities.setBrowserName("chrome");break;
-			case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
-			default:System.out.println("No Matching Browser"); return;
-			}
-			
-			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+
+		    DesiredCapabilities capabilities = new DesiredCapabilities();
+
+		    // OS
+		    if(os.equalsIgnoreCase("windows")) {
+		        capabilities.setPlatform(Platform.WIN11);
+		    }
+		    else if(os.equalsIgnoreCase("mac")) {
+		        capabilities.setPlatform(Platform.MAC);
+		    }
+		    else {
+		        System.out.println("No Matching os");
+		        return;
+		    }
+
+		    // Browser + Headless Options
+		    if (br.equalsIgnoreCase("chrome")) {
+
+		        ChromeOptions options = new ChromeOptions();
+		        options.addArguments("--headless=new");          // Headless mode
+		        options.addArguments("--no-sandbox");            // Required in Docker
+		        options.addArguments("--disable-dev-shm-usage"); // CI stability
+
+		        options.merge(capabilities);
+
+		        String seleniumUrl = System.getenv("SELENIUM_REMOTE_URL");
+		        if (seleniumUrl == null || seleniumUrl.isEmpty()) {
+		            seleniumUrl = "http://localhost:4444/wd/hub"; // fallback for local grid
+		        }
+
+		        driver = new RemoteWebDriver(new URL(seleniumUrl), options);
+
+		    } else if (br.equalsIgnoreCase("edge")) {
+
+		        EdgeOptions options = new EdgeOptions();
+		        options.addArguments("--headless=new");
+		        options.addArguments("--no-sandbox");
+		        options.addArguments("--disable-dev-shm-usage");
+
+		        options.merge(capabilities);
+
+		        String seleniumUrl = System.getenv("SELENIUM_REMOTE_URL");
+		        if (seleniumUrl == null || seleniumUrl.isEmpty()) {
+		            seleniumUrl = "http://localhost:4444/wd/hub";
+		        }
+
+		        driver = new RemoteWebDriver(new URL(seleniumUrl), options);
+
+		    } else {
+		        System.out.println("No Matching Browser");
+		        return;
+		    }
 		}
+
 		else if(p.getProperty("execution").equalsIgnoreCase("local")) {
 		
 		switch(br.toLowerCase()) {

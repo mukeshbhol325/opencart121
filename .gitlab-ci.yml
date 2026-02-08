@@ -1,6 +1,26 @@
 stages:
+  - build
   - test
+  - report
 
+variables:
+  MAVEN_OPTS: "-Djava.awt.headless=true"
+  MAVEN_CLI_OPTS: "-B -DskipTests=false"
+  SELENIUM_REMOTE_URL: "http://selenium-hub:4444/wd/hub"
+
+# -------- Build Stage --------
+build:
+  stage: build
+  image: maven:3.9.6-eclipse-temurin-17-jammy
+  script:
+    - echo "Building project..."
+    - mvn -B clean compile
+  artifacts:
+    paths:
+      - target/
+    expire_in: 1 week
+
+# -------- Test Stage --------
 test:
   stage: test
   image: maven:3.9.6-eclipse-temurin-17-jammy
@@ -13,18 +33,30 @@ test:
       alias: chrome
 
   variables:
-    SELENIUM_REMOTE_URL: "http://selenium-hub:4444/wd/hub"
-    SE_NODE_GRID_URL: "http://selenium-hub:4444"
     SE_EVENT_BUS_HOST: "selenium-hub"
     SE_EVENT_BUS_PUBLISH_PORT: "4442"
     SE_EVENT_BUS_SUBSCRIBE_PORT: "4443"
+    SE_NODE_GRID_URL: "http://selenium-hub:4444"
 
   script:
-    - echo "Running tests on Selenium Grid (Hub + Chrome Node)"
-    - mvn -B test -Djava.awt.headless=true
+    - echo "Running TestNG Selenium tests on Grid..."
+    - mvn -B test -Dos=linux -Dbrowser=chrome
 
   artifacts:
     when: always
     paths:
       - target/surefire-reports/
+      - target/failsafe-reports/
       - screenshots/
+    expire_in: 1 week
+
+# -------- Report Stage --------
+report:
+  stage: report
+  image: maven:3.9.6-eclipse-temurin-17-jammy
+  script:
+    - echo "Pipeline completed. Reports available in artifacts."
+  artifacts:
+    paths:
+      - target/surefire-reports/
+    expire_in: 1 week

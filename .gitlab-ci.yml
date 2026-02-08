@@ -6,6 +6,9 @@ stages:
 variables:
   MAVEN_OPTS: "-Djava.awt.headless=true"
   _JAVA_OPTIONS: "-Djava.awt.headless=true"
+  SE_EVENT_BUS_HOST: selenium-hub
+  SE_EVENT_BUS_PUBLISH_PORT: 4442
+  SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
 
 services:
   - name: selenium/hub:4.19.1
@@ -13,25 +16,22 @@ services:
 
   - name: selenium/node-chrome:4.19.1
     alias: chrome
-    command: ["--host", "selenium-hub"]
 
 test:
   stage: test
 
   before_script:
-    # Print versions for debug
     - java -version
     - mvn -version
 
-    # Create folder for TestNG suite and copy master.xml into project workspace
-    - mkdir -p src/test/resources
-    - cp master.xml src/test/resources/master.xml
+    # Make sure master.xml is present in repo root (same level as pom.xml)
+    - ls -l
 
-    # Wait for Selenium Grid to be ready
+    # Wait for Selenium Hub to be ready
     - |
       echo "Waiting for Selenium Grid..."
       for i in {1..30}; do
-        curl -s http://selenium-hub:4444/wd/hub/status | grep -q '"ready":true' && break
+        curl -s http://selenium-hub:4444/status | grep -q '"ready":true' && break
         echo "Selenium not ready yet..."
         sleep 5
       done

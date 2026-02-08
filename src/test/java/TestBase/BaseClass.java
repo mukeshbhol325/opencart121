@@ -73,7 +73,9 @@ public class BaseClass {
 		            seleniumUrl = "http://localhost:4444/wd/hub"; // fallback for local grid
 		        }
 
-		        driver = new RemoteWebDriver(new URL(seleniumUrl), options);
+		        String hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+    			driver = new RemoteWebDriver(new URL(hubUrl), options);
+
 
 		    } else if (br.equalsIgnoreCase("edge")) {
 
@@ -89,7 +91,8 @@ public class BaseClass {
 		            seleniumUrl = "http://localhost:4444/wd/hub";
 		        }
 
-		        driver = new RemoteWebDriver(new URL(seleniumUrl), options);
+		        String hubUrl = System.getProperty("selenium.remote.url", "http://selenium:4444/wd/hub");
+    			driver = new RemoteWebDriver(new URL(hubUrl), options);
 
 		    } else {
 		        System.out.println("No Matching Browser");
